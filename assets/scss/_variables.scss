@@ -1,0 +1,25 @@
+$_font-size-xs: 1rem; // 16px
+$_font-size-sm: 1.5rem; // 24px
+$_font-size-md: 1.75rem; // 28px
+$_font-size-lg: 2rem; // 32px
+$_font-size-xl: 3rem; // 48px
+$_font-size-xxl: 4rem; // 64px
+$_font-size-3xl: 7.5rem; // 120px
+$_font-size-h2: 6.25vw; // 120px of 1920px
+
+$_font-size: (
+  xs: 1rem,
+  sm: 1.5rem,
+  md: 1.75rem,
+  lg: 2rem,
+  xl: 3rem,
+  xxl: 4rem,
+  3xl: 7.5rem,
+  h2: 6.25vw,
+);
+
+@each $name, $size in $_font-size {
+  .font-#{$name} {
+    font-size: $size;
+  }
+}

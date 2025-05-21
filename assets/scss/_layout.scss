@@ -1,0 +1,19 @@
+// 頁首
+.nav {
+  padding: 24px 0;
+  &-link {
+    color: #000;
+    font-weight: bold;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+// 頁面結構
+.wrapper {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+// 頁尾

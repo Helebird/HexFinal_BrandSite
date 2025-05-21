@@ -1,0 +1,109 @@
+// 名片
+.selfIntro {
+  position: relative;
+  z-index: 1;
+  gap: 16px;
+  max-width: 1077px;
+  margin-top: -160px;
+  margin-right: 80px;
+  padding: 80px 40px;
+  &-group {
+    gap: 4px;
+    &-item {
+      width: 44px;
+      height: 44px;
+      color: $blue;
+      &:hover {
+        transform: translateX(2px);
+        transition: 1.2;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  // 名片RWD
+  .selfIntro {
+    max-width: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 40px 24px;
+  }
+}
+
+// 服務
+.service {
+  gap: 32px;
+  padding: 80px 0;
+  &-list {
+    gap: 64px;
+    margin: 32px auto;
+    padding: 0 110px;
+    &-item {
+      position: relative;
+      width: 100%;
+    }
+    &-item.flex-row-reverse .service-intro {
+      left: 0;
+    }
+  }
+  &-intro {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    padding: 24px;
+    width: 480px;
+    height: 210px;
+  }
+  &-foot-btn {
+    color: #000;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  // 服務
+  .service {
+    padding: 64px 0;
+    &-title {
+      text-align: center;
+    }
+    &-list {
+      gap: 32px;
+      width: 100%;
+      padding: 0 12px;
+    }
+    &-img {
+      width: 100%;
+    }
+    &-intro {
+      position: static;
+      width: 100%;
+    }
+    &-foot {
+      margin: 0 12px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // 服務
+  .service {
+    &-title {
+      font-size: $_font-size-xl;
+    }
+    &-foot {
+      a {
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+// 部落格精選
+.featured-blog {
+  padding: 80px 0;
+}

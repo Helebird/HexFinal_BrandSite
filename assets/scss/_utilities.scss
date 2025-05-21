@@ -1,0 +1,16 @@
+// 多行文字截斷
+@mixin text-truncate-multi($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  @include text-truncate-multi(2);
+}
+
+.line-clamp-3 {
+  @include text-truncate-multi(3);
+}
