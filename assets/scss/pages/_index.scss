@@ -104,6 +104,32 @@
 }
 
 // 部落格精選
-.featured-blog {
-  padding: 80px 0;
+.carousel-control-btn {
+  i {
+    color: $blue;
+    font-size: 44px;
+  }
 }
+
+@media (max-width: 1456px) {
+  // 部落格精選RWD
+  .carousel-control-btn {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  // 服務
+  .featured-blog-title {
+    font-size: $_font-size-xl;
+  }
+}
+
+// 案例

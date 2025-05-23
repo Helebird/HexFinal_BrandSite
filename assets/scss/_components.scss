@@ -10,6 +10,24 @@
 }
 
 // ============
+// 裝飾性元素
+// ============
+
+/* 橫線裝飾 */
+.line-decor {
+  width: 40px;
+  height: 40px;
+  padding: 18.75px 5px;
+  &:before {
+    content: '';
+    display: block;
+    height: 2.5px;
+    background-color: $blue;
+    border-radius: 5px;
+  }
+}
+
+// ============
 // 主視覺樣式
 // ============
 
@@ -63,20 +81,88 @@
   }
 }
 
-// ============
-// 裝飾性元素
-// ============
+// ===============
+// 部落格樣式
+// ===============
 
-/* 橫線裝飾 */
-.line-decor {
-  width: 40px;
-  height: 40px;
-  padding: 18.75px 5px;
-  &:before {
-    content: '';
-    display: block;
-    height: 2.5px;
-    background-color: $blue;
-    border-radius: 5px;
+/* 部落格卡片列表 */
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 calc((100% - 24px * 2) / 3);
+  &-img {
+    width: 100%;
+  }
+  &-date {
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  &-hashtag {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    color: $blue;
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &-title {
+    flex-grow: 1;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  &-description {
+    color: $gray;
+  }
+}
+
+.blog-btn {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: $border-radius;
+  text-align: center;
+}
+
+/* 按鈕-灰色外框 */
+.btn-outline-gray {
+  color: $gray;
+  border: 1px solid $gray;
+  &:hover {
+    color: #fff;
+    background-color: $gray;
+  }
+}
+
+/* 狀態標籤 */
+.status-tag {
+  padding: 6px 12px;
+  border-radius: $border-radius;
+  color: #fff;
+  background-color: $blue;
+  &:hover {
+    cursor: default;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 100%;
   }
 }
