@@ -22,7 +22,7 @@
     content: '';
     display: block;
     height: 2.5px;
-    background-color: $blue;
+    background-color: $primary;
     border-radius: 5px;
   }
 }
@@ -43,7 +43,7 @@
     flex-grow: 1;
     padding: 300px 80px;
     background-image: url('../img/hero_section2.png');
-    color: $blue;
+    color: $primary;
   }
   &-title {
     margin-bottom: 12px;
@@ -109,7 +109,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    color: $blue;
+    color: $primary;
     a:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -121,24 +121,37 @@
     font-weight: bold;
   }
   &-description {
-    color: $gray;
+    color: $gray-500;
+    margin-bottom: 16px;
   }
 }
 
-.blog-btn {
-  margin-top: 16px;
+// ============
+// 通用元件
+// ============
+
+/* 按鈕 */
+.custom-btn {
   padding: 8px 16px;
   border-radius: $border-radius;
   text-align: center;
 }
 
-/* 按鈕-灰色外框 */
 .btn-outline-gray {
-  color: $gray;
-  border: 1px solid $gray;
+  color: $gray-500;
+  border: 1px solid $gray-500;
   &:hover {
-    color: #fff;
-    background-color: $gray;
+    color: $white;
+    background-color: $gray-500;
+  }
+}
+
+.btn-outline-blue {
+  color: $primary;
+  border: 1px solid $primary;
+  &:hover {
+    color: $white;
+    background-color: $primary;
   }
 }
 
@@ -146,8 +159,8 @@
 .status-tag {
   padding: 6px 12px;
   border-radius: $border-radius;
-  color: #fff;
-  background-color: $blue;
+  color: $white;
+  background-color: $primary;
   &:hover {
     cursor: default;
   }

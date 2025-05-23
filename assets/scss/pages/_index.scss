@@ -1,3 +1,10 @@
+// 首頁統一樣式
+@media (max-width: 767px) {
+  .section-title {
+    font-size: $_font-size-xl;
+  }
+}
+
 // 名片
 .selfIntro {
   position: relative;
@@ -12,7 +19,7 @@
     &-item {
       width: 44px;
       height: 44px;
-      color: $blue;
+      color: $primary;
       &:hover {
         transform: translateX(2px);
         transition: 1.2;
@@ -57,7 +64,7 @@
   &-foot-btn {
     color: #000;
     &:hover {
-      color: $blue;
+      color: $primary;
     }
   }
 }
@@ -65,15 +72,10 @@
 @media (max-width: 1199px) {
   // 服務
   .service {
-    &-title {
-      text-align: center;
-    }
-    &-list {
-      padding: 0;
-    }
     &-list {
       gap: 32px;
       width: 100%;
+      padding: 0;
     }
     &-img {
       width: 100%;
@@ -90,23 +92,16 @@
 
 @media (max-width: 767px) {
   // 服務
-  .service {
-    &-title {
-      font-size: $_font-size-xl;
-    }
-    &-foot {
-      a {
-        display: block;
-        margin-top: 8px;
-      }
-    }
+  .service-foot a {
+    display: block;
+    margin-top: 8px;
   }
 }
 
 // 部落格精選
 .carousel-control-btn {
   i {
-    color: $blue;
+    color: $primary;
     font-size: 44px;
   }
 }
@@ -125,11 +120,62 @@
   }
 }
 
-@media (max-width: 767px) {
-  // 服務
-  .featured-blog-title {
-    font-size: $_font-size-xl;
+// 案例
+.case-banner {
+  display: flex;
+}
+
+.case-img-wrapper {
+  max-width: 745px;
+  padding: 24px;
+  background-color: $gray-400;
+}
+
+.case-img {
+  width: 100%;
+  display: block;
+}
+
+// 要重寫
+.case-intro {
+  width: 745px;
+}
+
+.case-intro-card {
+  max-width: 526px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  a {
+    max-width: 130px;
+    background-color: $white;
+  }
+  &-up {
+    margin-top: 29px;
+    margin-left: -195px;
+    background-color: $white;
+  }
+  &-down {
+    margin-top: -40px;
+    margin-left: 24px;
+    background-color: $gray-200;
   }
 }
 
-// 案例
+.case-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  padding: 24px;
+  background-color: $gray-200;
+  &-item {
+    flex: 0 0 calc((100% - 24px * 3) / 4);
+  }
+}
+
+.case-list-item-bio {
+  list-style-image: url('../img/checkbox.svg');
+  list-style-position: inside;
+  border-bottom: 1px solid $gray-500;
+}

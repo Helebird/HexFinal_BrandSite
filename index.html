@@ -93,7 +93,9 @@
       <!-- 服務 -->
       <section class="service section-wrapper">
         <div class="wrapper">
-          <h2 class="service-title font-xxl fw-bold">專業服務與方案</h2>
+          <h2 class="section-title service-title font-xxl fw-bold">
+            專業服務與方案
+          </h2>
           <ul class="service-list d-flex flex-column">
             <li class="service-list-item d-xl-flex d-block">
               <img
@@ -166,7 +168,7 @@
       <!-- 部落格精選 -->
       <section class="featured-blog section-wrapper">
         <div class="wrapper">
-          <h2 class="featured-blog-title font-xxl fw-bold mb-4">部落格精選</h2>
+          <h2 class="section-title font-xxl fw-bold mb-4">部落格精選</h2>
           <div class="carousel">
             <ul class="blog-list">
               <li class="blog-card">
@@ -183,11 +185,11 @@
                 <h3 class="blog-card-title fs-md">
                   自學前端不用怕：從零開始的三大關鍵
                 </h3>
-                <p class="blog-card-escription line-clamp-2 font-xs">
+                <p class="blog-card-description line-clamp-2 font-xs">
                   嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
                   其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
                 </p>
-                <a href="#" class="blog-btn btn-outline-gray font-xs">
+                <a href="#" class="custom-btn btn-outline-gray font-xs">
                   閱讀內文
                 </a>
               </li>
@@ -206,10 +208,10 @@
                 <h3 class="blog-card-title fs-md">
                   前端面試不再慌：破解常見提問的三大策略
                 </h3>
-                <p class="blog-card-escription line-clamp-2 font-xs">
+                <p class="blog-card-description line-clamp-2 font-xs">
                   面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
                 </p>
-                <a href="#" class="blog-btn btn-outline-gray font-xs">
+                <a href="#" class="custom-btn btn-outline-gray font-xs">
                   閱讀內文
                 </a>
               </li>
@@ -227,11 +229,11 @@
                 <h3 class="blog-card-title fs-md">
                   CSS 魔法大揭密：排版與設計的三大關鍵技巧
                 </h3>
-                <p class="blog-card-escription line-clamp-2 font-xs">
+                <p class="blog-card-description line-clamp-2 font-xs">
                   在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
                   CSS，打造兼具美感與功能性的網頁。
                 </p>
-                <a href="#" class="blog-btn btn-outline-gray font-xs">
+                <a href="#" class="custom-btn btn-outline-gray font-xs">
                   閱讀內文
                 </a>
               </li>
@@ -252,7 +254,88 @@
       </section>
 
       <!-- 案例 -->
-      <section></section>
+      <section class="section-wrapper">
+        <div class="wrapper">
+          <h2 class="section-title font-xxl fw-bold mb-4">職涯諮詢成功案例</h2>
+          <div class="case-banner">
+            <div class="case-img-wrapper">
+              <img
+                src="../assets/img/case_photo1.png"
+                alt="職涯諮詢示意畫面"
+                class="case-img"
+              />
+            </div>
+            <ul class="case-intro">
+              <li class="case-intro-card case-intro-card-up">
+                <div class="line-decor"></div>
+                <p class="font-xs fw-bold">
+                  在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
+                    class="text-primary"
+                    >突破原有的舒適圈</span
+                  >。
+                </p>
+              </li>
+              <li class="case-intro-card case-intro-card-down">
+                <div class="line-decor"></div>
+                <p class="font-xs fw-bold">
+                  期待在下一個新機會中，我能與你一起攜手邁向更高峰！
+                </p>
+                <a href="#" class="custom-btn btn-outline-blue font-xs fw-bold"
+                  >立即預約諮詢</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="case-list">
+            <li class="case-list-item">
+              <img src="../assets/img/case_photo2.png" alt="學員個人頭像" />
+              <h4 class="font-sm fw-bold mt-3 mb-2">
+                無經驗到前端工程師 Offer
+              </h4>
+              <ul class="case-list-item-bio font-xs mb-3 pb-3">
+                <li class="mb-2">打造前端專案與履歷亮點</li>
+                <li>深度強化面試表現</li>
+              </ul>
+              <a href="#" class="custom-btn btn-outline-gray font-xs"
+                >前往聆聽 podcast</a
+              >
+            </li>
+            <li class="case-list-item">
+              <img src="../assets/img/case_photo3.png" alt="學員個人頭像" />
+              <h4 class="font-sm fw-bold mt-3 mb-2">轉職迷茫到明確學習規劃</h4>
+              <ul class="case-list-item-bio font-xs mb-3 pb-3">
+                <li class="mb-2">制訂階段性目標與時間安排</li>
+                <li>鼓勵參與前端社群或活動</li>
+              </ul>
+              <a href="#" class="custom-btn btn-outline-gray font-xs"
+                >前往聆聽 podcast</a
+              >
+            </li>
+            <li class="case-list-item">
+              <img src="../assets/img/case_photo4.png" alt="學員個人頭像" />
+              <h4 class="font-sm fw-bold mt-3 mb-2">面試緊張到從容應對</h4>
+              <ul class="case-list-item-bio font-xs mb-3 pb-3">
+                <li class="mb-2">透過面試模擬找出常犯的邏輯漏洞</li>
+                <li>討論遇到不熟悉議題時的回應方式</li>
+              </ul>
+              <a href="#" class="custom-btn btn-outline-gray font-xs"
+                >前往聆聽 podcast</a
+              >
+            </li>
+            <li class="case-list-item">
+              <img src="../assets/img/case_photo5.png" alt="學員個人頭像" />
+              <h4 class="font-sm fw-bold mt-3 mb-2">技術與溝通能力提升</h4>
+              <ul class="case-list-item-bio font-xs mb-3 pb-3">
+                <li class="mb-2">擬定進階框架或技術研究目標</li>
+                <li>培養跨團隊溝通與簡報能力</li>
+              </ul>
+              <a href="#" class="custom-btn btn-outline-gray font-xs"
+                >前往聆聽 podcast</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- 電子報 -->
       <section></section>
