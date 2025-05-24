@@ -12,18 +12,17 @@
 
 // 頁面結構
 .section-wrapper {
-  padding: 0 12px;
+  padding: 80px 12px;
 }
 
 .wrapper {
   max-width: 1296px;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  // 服務
-  .wrapper {
-    margin: 64px auto;
+  .section-wrapper {
+    padding: 64px 12px;
   }
 }
 

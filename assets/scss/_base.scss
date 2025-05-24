@@ -144,9 +144,11 @@ table {
 
 body {
   background-color: #fbfbfb;
+  // background-color: red;
   font-size: $_font-size-md;
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.5;
+  user-select: none;
 }
 
 h1 {

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
 
-    <link rel="icon" href="assets/img/logo_birdnana.png" />
+    <link rel="icon" href="/assets/img/logo_birdnana.png" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- fontawsome -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,9 +16,9 @@
       referrerpolicy="no-referrer"
     />
 
-    <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/title.js"></script>
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/title.js"></script>
   </head>
 
   <body>
@@ -41,7 +40,7 @@
       <section>
         <div class="profile">
           <img
-            src="./assets/img/hero_section.png"
+            src="/assets/img/hero_section.png"
             alt="個人照"
             class="profile-photo"
           />
@@ -99,7 +98,7 @@
           <ul class="service-list d-flex flex-column">
             <li class="service-list-item d-xl-flex d-block">
               <img
-                src="./assets/img/service_photo1.png"
+                src="/assets/img/service_photo1.png"
                 alt="履歷健檢"
                 class="service-img"
               />
@@ -113,7 +112,7 @@
             </li>
             <li class="service-list-item d-xl-flex d-block flex-row-reverse">
               <img
-                src="./assets/img/service_photo2.png"
+                src="/assets/img/service_photo2.png"
                 alt="線上諮詢"
                 class="service-img"
               />
@@ -127,7 +126,7 @@
             </li>
             <li class="service-list-item d-xl-flex d-block">
               <img
-                src="./assets/img/service_photo3.png"
+                src="/assets/img/service_photo3.png"
                 alt="網頁開發"
                 class="service-img"
               />
@@ -141,7 +140,7 @@
             </li>
             <li class="service-list-item d-xl-flex d-block flex-row-reverse">
               <img
-                src="./assets/img/service_photo4.png"
+                src="/assets/img/service_photo4.png"
                 alt="企業內訓"
                 class="service-img"
               />
@@ -173,7 +172,7 @@
             <ul class="blog-list">
               <li class="blog-card">
                 <img
-                  src="./assets/img/blog_photo1.png"
+                  src="/assets/img/blog_photo1.png"
                   class="blog-card-img"
                   alt="部落格文章封面，React入門基礎"
                 />
@@ -195,7 +194,7 @@
               </li>
               <li class="blog-card d-md-flex d-none">
                 <img
-                  src="./assets/img/blog_photo2.png"
+                  src="/assets/img/blog_photo2.png"
                   class="blog-card-img"
                   alt="部落格文章封面，前端面試策略"
                 />
@@ -217,7 +216,7 @@
               </li>
               <li class="blog-card d-xl-flex d-none">
                 <img
-                  src="./assets/img/blog_photo3.png"
+                  src="/assets/img/blog_photo3.png"
                   class="blog-card-img"
                   alt="部落格文章封面，CSS排版與設計"
                 />
@@ -257,13 +256,19 @@
       <section class="section-wrapper">
         <div class="wrapper">
           <h2 class="section-title font-xxl fw-bold mb-4">職涯諮詢成功案例</h2>
-          <div class="case-banner">
+          <div class="case-banner d-md-flex flex-md-row flex-column">
             <div class="case-img-wrapper">
-              <img
-                src="./assets/img/case_photo1.png"
-                alt="職涯諮詢示意畫面"
-                class="case-img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/img/case_mobile_photo1.png"
+                />
+                <img
+                  src="/assets/img/case_photo1.png"
+                  alt="職涯諮詢示意畫面"
+                  class="case-img"
+                />
+              </picture>
             </div>
             <ul class="case-intro">
               <li class="case-intro-card case-intro-card-up">
@@ -288,10 +293,8 @@
           </div>
           <ul class="case-list">
             <li class="case-list-item">
-              <img src="./assets/img/case_photo2.png" alt="學員個人頭像" />
-              <h4 class="font-sm fw-bold mt-3 mb-2">
-                無經驗到前端工程師 Offer
-              </h4>
+              <img src="/assets/img/case_photo2.png" alt="學員個人頭像" />
+              <h4 class="font-sm fw-bold mt-3 mb-2">無經驗到前端工程師</h4>
               <ul class="case-list-item-bio font-xs mb-3 pb-3">
                 <li class="mb-2">打造前端專案與履歷亮點</li>
                 <li>深度強化面試表現</li>
@@ -301,7 +304,7 @@
               >
             </li>
             <li class="case-list-item">
-              <img src="./assets/img/case_photo3.png" alt="學員個人頭像" />
+              <img src="/assets/img/case_photo3.png" alt="學員個人頭像" />
               <h4 class="font-sm fw-bold mt-3 mb-2">轉職迷茫到明確學習規劃</h4>
               <ul class="case-list-item-bio font-xs mb-3 pb-3">
                 <li class="mb-2">制訂階段性目標與時間安排</li>
@@ -312,7 +315,7 @@
               >
             </li>
             <li class="case-list-item">
-              <img src="./assets/img/case_photo4.png" alt="學員個人頭像" />
+              <img src="/assets/img/case_photo4.png" alt="學員個人頭像" />
               <h4 class="font-sm fw-bold mt-3 mb-2">面試緊張到從容應對</h4>
               <ul class="case-list-item-bio font-xs mb-3 pb-3">
                 <li class="mb-2">透過面試模擬找出常犯的邏輯漏洞</li>
@@ -323,7 +326,7 @@
               >
             </li>
             <li class="case-list-item">
-              <img src="./assets/img/case_photo5.png" alt="學員個人頭像" />
+              <img src="/assets/img/case_photo5.png" alt="學員個人頭像" />
               <h4 class="font-sm fw-bold mt-3 mb-2">技術與溝通能力提升</h4>
               <ul class="case-list-item-bio font-xs mb-3 pb-3">
                 <li class="mb-2">擬定進階框架或技術研究目標</li>
