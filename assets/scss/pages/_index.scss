@@ -256,3 +256,39 @@
     }
   }
 }
+
+// 聯絡
+.contact {
+  &-list-item:hover {
+    padding-left: 16px;
+    padding-right: 8px;
+    background-color: $gray-100;
+    box-shadow: -7px 0px 0px $primary;
+  }
+  &-link {
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+    i {
+      width: 44px;
+      height: 44px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.arrow-container {
+  width: 24px;
+  height: 24px;
+  img {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  // 聯絡RWD
+  .contact-list-item {
+    font-size: $_font-size-sm;
+  }
+}
