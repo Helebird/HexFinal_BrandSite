@@ -32,18 +32,17 @@
 // ============
 
 /* 主頁橫幅 */
-.profile {
+.banner-section {
   display: flex;
-  &-photo {
+  &-left {
     display: block;
     width: 50%;
     min-height: 375px;
   }
-  &-info {
+  &-right {
     flex-grow: 1;
     padding: 300px 80px;
     background-image: url('../img/hero_section2.png');
-    color: $primary;
   }
   &-title {
     margin-bottom: 12px;
@@ -52,15 +51,16 @@
 
 @media (max-width: 1199px) {
   /* 主頁橫幅RWD */
-  .profile {
+  .banner-section {
     display: block;
-    &-photo,
-    &-info {
+    &-left,
+    &-right {
       width: 100%;
-      text-wrap: nowrap;
     }
-    &-info {
-      padding: 24px 34px 184px 24px;
+    &-right {
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
     }
     &-title {
       font-size: $_font-size-3xl;
@@ -70,8 +70,8 @@
 
 @media (max-width: 767px) {
   /* 主頁橫幅RWD */
-  .profile {
-    &-info {
+  .banner-section {
+    &-right {
       min-height: 356px;
       padding-bottom: 0;
     }
@@ -118,7 +118,6 @@
   &-title {
     flex-grow: 1;
     margin-bottom: 8px;
-    font-weight: bold;
   }
   &-description {
     color: $gray-500;

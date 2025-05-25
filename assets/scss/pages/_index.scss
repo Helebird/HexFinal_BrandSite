@@ -5,7 +5,7 @@
   }
 }
 
-// 名片
+// 主視覺
 .selfIntro {
   position: relative;
   z-index: 1;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 1199px) {
-  // 名片RWD
+  // 主視覺RWD
   .selfIntro {
     max-width: 100%;
     margin-left: 12px;
@@ -70,7 +70,7 @@
 }
 
 @media (max-width: 1199px) {
-  // 服務
+  // 服務RWD
   .service {
     &-list {
       gap: 32px;
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 767px) {
-  // 服務
+  // 服務RWD
   .service-foot a {
     display: block;
     margin-top: 8px;
@@ -121,59 +121,58 @@
 }
 
 // 案例
-.case-banner {
-  gap: 25px;
-}
-
-.case-img-wrapper {
-  max-width: 745px;
-  padding: 24px;
-  background-color: $gray-400;
-}
-
-.case-img {
-  width: 100%;
-  height: 578px;
-  display: block;
-}
-
-.case-intro {
-  max-width: 526px;
-  &-card {
-    max-width: 100%;
-    padding: 80px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    a {
-      max-width: 130px;
-      background-color: $white;
-    }
-    &-up {
-      margin-top: 29px;
-      margin-left: -195px;
-      background-color: $white;
-    }
-    &-down {
-      margin-top: -40px;
-      background-color: $gray-200;
+.case {
+  &-banner {
+    gap: 25px;
+  }
+  &-img-wrapper {
+    max-width: 745px;
+    height: 626px;
+    padding: 24px;
+    background-color: $gray-400;
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  &-intro {
+    max-width: 526px;
+    &-card {
+      max-width: 100%;
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      a {
+        max-width: 130px;
+        background-color: $white;
+      }
+      &-up {
+        margin-top: 29px;
+        margin-left: -195px;
+        background-color: $white;
+      }
+      &-down {
+        margin-top: -40px;
+        background-color: $gray-200;
+      }
     }
   }
-}
-
-.case-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 40px;
-  padding: 24px;
-  background-color: $gray-200;
-  &-item {
-    flex: 0 0 calc((100% - 24px * 3) / 4);
-    &-bio {
-      list-style-image: url('../img/checkbox.svg');
-      list-style-position: inside;
-      border-bottom: 1px solid $gray-500;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+    padding: 24px;
+    background-color: $gray-200;
+    &-item {
+      flex: 0 0 calc((100% - 24px * 3) / 4);
+      &-bio {
+        list-style-image: url('../img/checkbox.svg');
+        list-style-position: inside;
+        border-bottom: 1px solid $gray-500;
+      }
     }
   }
 }
@@ -190,29 +189,70 @@
 
 @media (max-width: 767px) {
   // 案例RWD
-  .case-banner {
-    gap: 0;
-  }
-  .case-img-wrapper,
-  .case-intro {
-    max-width: 100%;
-  }
-  .case-intro {
-    position: relative;
-    z-index: 1;
-    margin-top: -160px;
-    display: block;
-    &-card {
-      margin: 0;
-      padding: 40px 24px;
-      &-up {
-        margin-bottom: 12px;
+  .case {
+    &-banner {
+      gap: 0;
+    }
+    &-img-wrapper,
+    &-intro {
+      max-width: 100%;
+    }
+    &-intro {
+      position: relative;
+      z-index: 1;
+      margin-top: -160px;
+      display: block;
+      &-card {
+        margin: 0;
+        padding: 40px 24px;
+        &-up {
+          margin-bottom: 12px;
+        }
       }
     }
-  }
-  .case-list {
-    &-item {
+    &-list-item {
       flex: 0 0 100%;
+    }
+  }
+}
+
+// 訂閱
+.subscribe {
+  &-section {
+    padding: 172px 80px;
+  }
+  &-content {
+    padding: 80px;
+  }
+  &-form input {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: $gray-300;
+    font-weight: $font-weight-medium;
+  }
+}
+
+@media (max-width: 1199px) {
+  // 訂閱RWD
+  .subscribe {
+    &-section {
+      padding: 86px 40px;
+    }
+    &-content {
+      padding: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // 訂閱RWD
+  .subscribe {
+    &-section {
+      padding: 12px;
+    }
+    &-content {
+      padding: 40px 24px;
     }
   }
 }
