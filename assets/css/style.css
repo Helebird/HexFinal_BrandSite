@@ -11063,6 +11063,10 @@ img {
     padding-left: 24px;
     padding-right: 24px;
   }
+  .banner-section-right-custom {
+    min-height: 180px;
+    padding-bottom: 48px;
+  }
   .banner-section-title {
     font-size: 7.5rem;
   }
@@ -11075,6 +11079,7 @@ img {
   }
   .banner-section-right-custom {
     min-height: 180px;
+    padding-bottom: 24px;
   }
   .banner-section-title {
     font-size: 3.25rem;
