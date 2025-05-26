@@ -11113,6 +11113,18 @@ img {
   margin-bottom: 16px;
 }
 
+@media (max-width: 1199px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 768px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 100%;
+  }
+}
 /* 按鈕 */
 .custom-btn {
   padding: 8px 16px;
@@ -11149,18 +11161,23 @@ img {
   cursor: default;
 }
 
-@media (max-width: 1199px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
+/* 回頂部按鈕 */
+.scrollTopBtn {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  cursor: pointer;
+  color: #b2bef2;
+  background-color: transparent;
+  font-size: 3rem;
 }
-@media (max-width: 768px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
-  }
+.scrollTopBtn:hover {
+  color: #0027d5;
+  transform: scale(1.2);
 }
+
 .nav {
   position: fixed;
   z-index: 10;

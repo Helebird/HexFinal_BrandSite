@@ -125,6 +125,20 @@
   }
 }
 
+@media (max-width: 1199px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 100%;
+  }
+}
+
 // ============
 // 通用元件
 // ============
@@ -165,16 +179,19 @@
   }
 }
 
-@media (max-width: 1199px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
-}
-
-@media (max-width: 768px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
+/* 回頂部按鈕 */
+.scrollTopBtn {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  cursor: pointer;
+  color: #b2bef2;
+  background-color: transparent;
+  font-size: $_font-size-xl;
+  &:hover {
+    color: $primary;
+    transform: scale(1.2);
   }
 }
