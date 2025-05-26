@@ -1,0 +1,77 @@
+svg {
+  vertical-align: top;
+}
+
+// 部落格文章列表
+// Search
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 416px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid $gray-500;
+  border-radius: $border-radius;
+  &-icon {
+    color: $gray-500;
+    width: 24px;
+    height: 24px;
+  }
+  &-input {
+    width: 318px;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    font-size: $_font-size-xs;
+    &::placeholder {
+      color: $gray-500;
+    }
+  }
+}
+
+// Blog Content
+.blog-list-full {
+  padding-top: 40px;
+}
+
+.blog-card-full {
+  margin-bottom: 40px;
+}
+
+// Pagination
+.page {
+  max-width: 328px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border-radius: 40px;
+  &-list {
+    padding: 8px 12px;
+    color: $gray-500;
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+  &-prev a,
+  &-next a {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  // Search
+  .search-form {
+    max-width: 100%;
+  }
+  // Blog Content
+  .blog-list-full {
+    gap: 32px;
+    padding: 40px 0;
+  }
+  .blog-card-full {
+    margin-bottom: 0px;
+  }
+}

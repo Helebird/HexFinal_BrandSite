@@ -21,8 +21,7 @@
       height: 44px;
       color: $primary;
       &:hover {
-        transform: translateX(2px);
-        transition: 1.2;
+        transform: translateY(-3px);
       }
     }
   }
