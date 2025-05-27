@@ -1,17 +1,35 @@
 // 頁首
-.nav {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
   padding: 24px 0;
   background-color: $gray-100;
-  &-link {
-    color: #000;
-    font-weight: bold;
-    &:hover {
-      color: $primary;
+  &-list {
+    &-link {
+      color: #000;
+      font-weight: bold;
+      &:hover {
+        color: $primary;
+      }
     }
   }
+}
+
+.navbar {
+  // position: fixed;
+  // z-index: 10;
+  // width: 100%;
+  // padding: 24px 0;
+  // background-color: $gray-100;
+  // &-link {
+  //   color: #000;
+  //   font-weight: bold;
+  //   &:hover {
+  //     color: $primary;
+  //   }
+  // }
 }
 
 @media (max-width: 767px) {

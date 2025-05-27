@@ -11144,7 +11144,7 @@ img {
     flex: 0 0 calc((100% - 24px) / 2);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* 部落格卡片列表RWD */
   .blog-card {
     flex: 0 0 100%;
@@ -11203,22 +11203,23 @@ img {
   transform: scale(1.2);
 }
 
-.nav {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
   padding: 24px 0;
   background-color: #fbfbfb;
 }
-.nav-link {
+.sticky-nav-list-link {
   color: #000;
   font-weight: bold;
 }
-.nav-link:hover {
+.sticky-nav-list-link:hover {
   color: #0027d5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav {
     position: static;
   }
@@ -11232,7 +11233,7 @@ img {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .section-wrapper {
     padding: 64px 12px;
   }
@@ -11549,7 +11550,7 @@ svg {
   height: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .search-form {
     max-width: 100%;
   }
