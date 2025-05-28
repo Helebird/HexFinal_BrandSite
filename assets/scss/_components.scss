@@ -28,141 +28,6 @@
 }
 
 // ============
-// 區塊視覺樣式
-// ============
-
-/* 主頁橫幅 */
-.banner-section {
-  display: flex;
-  &-left {
-    display: block;
-    width: 50%;
-    min-height: 375px;
-  }
-  &-right {
-    flex-grow: 1;
-    padding: 300px 80px;
-    background-image: url('../img/hero_section2.png');
-  }
-  &-title {
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 1199px) {
-  /* 主頁橫幅RWD */
-  .banner-section {
-    display: block;
-    &-left,
-    &-right {
-      width: 100%;
-    }
-    &-right {
-      padding-top: 24px;
-      padding-left: 24px;
-      padding-right: 24px;
-      &-custom {
-        min-height: 180px;
-        padding-bottom: 48px;
-      }
-    }
-    &-title {
-      font-size: $_font-size-3xl;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  /* 主頁橫幅RWD */
-  .banner-section {
-    &-right {
-      min-height: 356px;
-      padding-bottom: 0;
-      &-custom {
-        min-height: 180px;
-        padding-bottom: 24px;
-      }
-    }
-    &-title {
-      font-size: 3.25rem;
-    }
-  }
-}
-
-/* 最新文章橫幅 */
-.latest-section {
-  display: flex;
-  gap: 24px;
-  border-top: 1px solid $gray-500;
-  border-bottom: 1px solid $gray-500;
-  &-img {
-    display: block;
-    width: 50%;
-    min-height: 375px;
-  }
-  &-content {
-    max-width: 636px;
-    padding: 80px 120px 80px 0px;
-    .custom-btn {
-      max-width: 98px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  /* 最新文章橫幅RWD */
-  .latest-section {
-    display: block;
-    &-img,
-    &-content {
-      width: 100%;
-    }
-    &-content {
-      padding: 48px 12px;
-    }
-  }
-}
-
-/* 聯絡頁尾 */
-.contact-footer-icon:hover {
-  transform: translateY(-3px);
-}
-
-// ===============
-// 部落格樣式
-// ===============
-
-/* 部落格卡片列表 */
-.blog-card {
-  flex: 0 0 calc((100% - 24px * 2) / 3);
-  &-img {
-    width: 100%;
-  }
-  &-hashtag a:hover {
-    text-decoration: underline;
-    color: $primary;
-  }
-  &-description {
-    color: $gray-500;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 1199px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
-}
-
-@media (max-width: 767px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
-  }
-}
-
-// ============
 // 通用元件
 // ============
 
@@ -225,5 +90,130 @@
   &:hover {
     color: $primary;
     transform: scale(1.2);
+  }
+}
+
+// ============
+// 區塊視覺樣式
+// ============
+
+/* 主頁橫幅 */
+.banner-section {
+  display: flex;
+  &-left {
+    display: block;
+    width: 50%;
+    min-height: 375px;
+  }
+  &-right {
+    flex-grow: 1;
+    padding: 300px 80px;
+    background-image: url('../img/hero_section2.png');
+  }
+  &-title {
+    margin-bottom: 12px;
+  }
+}
+
+/* 部落格卡片列表 */
+.blog-card {
+  flex: 0 0 calc((100% - 24px * 2) / 3);
+  &-img {
+    width: 100%;
+  }
+  &-hashtag a:hover {
+    text-decoration: underline;
+    color: $primary;
+  }
+  &-description {
+    color: $gray-500;
+    margin-bottom: 16px;
+  }
+}
+
+/* 最新文章橫幅 */
+.latest-section {
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid $gray-500;
+  border-bottom: 1px solid $gray-500;
+  &-img {
+    display: block;
+    width: 50%;
+    min-height: 375px;
+  }
+  &-content {
+    max-width: 636px;
+    padding: 80px 120px 80px 0px;
+    .custom-btn {
+      max-width: 98px;
+    }
+  }
+}
+
+/* 聯絡頁尾 */
+.contact-footer-icon:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1199px) {
+  /* 主頁橫幅RWD */
+  .banner-section {
+    display: block;
+    &-left,
+    &-right {
+      width: 100%;
+    }
+    &-right {
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      &-custom {
+        min-height: 180px;
+        padding-bottom: 48px;
+      }
+    }
+    &-title {
+      font-size: $_font-size-3xl;
+    }
+  }
+
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  /* 主頁橫幅RWD */
+  .banner-section {
+    &-right {
+      min-height: 356px;
+      padding-bottom: 0;
+      &-custom {
+        min-height: 180px;
+        padding-bottom: 24px;
+      }
+    }
+    &-title {
+      font-size: 3.25rem;
+    }
+  }
+
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 100%;
+  }
+
+  /* 最新文章橫幅RWD */
+  .latest-section {
+    display: block;
+    &-img,
+    &-content {
+      width: 100%;
+    }
+    &-content {
+      padding: 48px 12px;
+    }
   }
 }

@@ -17,12 +17,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .nav {
-    position: static;
-  }
-}
-
 // 頁面結構
 .section-wrapper {
   padding: 80px 12px;
@@ -39,9 +33,13 @@
 }
 
 @media (max-width: 767px) {
+  // 頁首RWD
+  .nav {
+    position: static;
+  }
+
+  // 頁面結構RWD
   .section-wrapper {
     padding: 64px 12px;
   }
 }
-
-// 頁尾

@@ -19,7 +19,6 @@ blog
 
 ## SCSS 架構  
 ```
-style.scss
 - variables.scss  | 自定變數
 - bootstrap-5.2.3 | 引入 Bootstrap 5.2.3 版本
 - utilities       | 抽象功能
@@ -29,12 +28,12 @@ style.scss
 pages
 - home.scss       | index.html 專用樣式
 - blog.scss       | blog.html 專用樣式
+- post.scss       | blog/文章 專用樣式
 ```
 
 ## JS 架構
 ```
 - bootstrap.bundle.min.js   | 引入 Bootstrap 5.2.3 版本
 - jquery-3.7.0.min.js       | 引入 jQuery 2.7.0 版本
-- script.js                 |
-- title.js                  | 每頁title設定
+- script.js                 | 自訂網頁功能
 ```

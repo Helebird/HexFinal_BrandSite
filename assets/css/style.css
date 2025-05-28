@@ -11037,124 +11037,6 @@ img {
   border-radius: 5px;
 }
 
-/* 主頁橫幅 */
-.banner-section {
-  display: flex;
-}
-.banner-section-left {
-  display: block;
-  width: 50%;
-  min-height: 375px;
-}
-.banner-section-right {
-  flex-grow: 1;
-  padding: 300px 80px;
-  background-image: url("../img/hero_section2.png");
-}
-.banner-section-title {
-  margin-bottom: 12px;
-}
-
-@media (max-width: 1199px) {
-  /* 主頁橫幅RWD */
-  .banner-section {
-    display: block;
-  }
-  .banner-section-left, .banner-section-right {
-    width: 100%;
-  }
-  .banner-section-right {
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .banner-section-right-custom {
-    min-height: 180px;
-    padding-bottom: 48px;
-  }
-  .banner-section-title {
-    font-size: 7.5rem;
-  }
-}
-@media (max-width: 767px) {
-  /* 主頁橫幅RWD */
-  .banner-section-right {
-    min-height: 356px;
-    padding-bottom: 0;
-  }
-  .banner-section-right-custom {
-    min-height: 180px;
-    padding-bottom: 24px;
-  }
-  .banner-section-title {
-    font-size: 3.25rem;
-  }
-}
-/* 最新文章橫幅 */
-.latest-section {
-  display: flex;
-  gap: 24px;
-  border-top: 1px solid #4b4b4b;
-  border-bottom: 1px solid #4b4b4b;
-}
-.latest-section-img {
-  display: block;
-  width: 50%;
-  min-height: 375px;
-}
-.latest-section-content {
-  max-width: 636px;
-  padding: 80px 120px 80px 0px;
-}
-.latest-section-content .custom-btn {
-  max-width: 98px;
-}
-
-@media (max-width: 767px) {
-  /* 最新文章橫幅RWD */
-  .latest-section {
-    display: block;
-  }
-  .latest-section-img, .latest-section-content {
-    width: 100%;
-  }
-  .latest-section-content {
-    padding: 48px 12px;
-  }
-}
-/* 聯絡頁尾 */
-.contact-footer-icon:hover {
-  transform: translateY(-3px);
-}
-
-/* 部落格卡片列表 */
-.blog-card {
-  flex: 0 0 calc((100% - 48px) / 3);
-}
-.blog-card-img {
-  width: 100%;
-}
-.blog-card-hashtag a:hover {
-  text-decoration: underline;
-  color: #0027d5;
-}
-.blog-card-description {
-  color: #4b4b4b;
-  margin-bottom: 16px;
-}
-
-@media (max-width: 1199px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
-}
-@media (max-width: 767px) {
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
-  }
-}
 /* 按鈕 */
 .custom-btn {
   padding: 8px 16px;
@@ -11217,6 +11099,118 @@ img {
   transform: scale(1.2);
 }
 
+/* 主頁橫幅 */
+.banner-section {
+  display: flex;
+}
+.banner-section-left {
+  display: block;
+  width: 50%;
+  min-height: 375px;
+}
+.banner-section-right {
+  flex-grow: 1;
+  padding: 300px 80px;
+  background-image: url("../img/hero_section2.png");
+}
+.banner-section-title {
+  margin-bottom: 12px;
+}
+
+/* 部落格卡片列表 */
+.blog-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+}
+.blog-card-img {
+  width: 100%;
+}
+.blog-card-hashtag a:hover {
+  text-decoration: underline;
+  color: #0027d5;
+}
+.blog-card-description {
+  color: #4b4b4b;
+  margin-bottom: 16px;
+}
+
+/* 最新文章橫幅 */
+.latest-section {
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+}
+.latest-section-img {
+  display: block;
+  width: 50%;
+  min-height: 375px;
+}
+.latest-section-content {
+  max-width: 636px;
+  padding: 80px 120px 80px 0px;
+}
+.latest-section-content .custom-btn {
+  max-width: 98px;
+}
+
+/* 聯絡頁尾 */
+.contact-footer-icon:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1199px) {
+  /* 主頁橫幅RWD */
+  .banner-section {
+    display: block;
+  }
+  .banner-section-left, .banner-section-right {
+    width: 100%;
+  }
+  .banner-section-right {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .banner-section-right-custom {
+    min-height: 180px;
+    padding-bottom: 48px;
+  }
+  .banner-section-title {
+    font-size: 7.5rem;
+  }
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  /* 主頁橫幅RWD */
+  .banner-section-right {
+    min-height: 356px;
+    padding-bottom: 0;
+  }
+  .banner-section-right-custom {
+    min-height: 180px;
+    padding-bottom: 24px;
+  }
+  .banner-section-title {
+    font-size: 3.25rem;
+  }
+  /* 部落格卡片列表RWD */
+  .blog-card {
+    flex: 0 0 100%;
+  }
+  /* 最新文章橫幅RWD */
+  .latest-section {
+    display: block;
+  }
+  .latest-section-img, .latest-section-content {
+    width: 100%;
+  }
+  .latest-section-content {
+    padding: 48px 12px;
+  }
+}
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -11233,11 +11227,6 @@ img {
   color: #0027d5;
 }
 
-@media (max-width: 767px) {
-  .nav {
-    position: static;
-  }
-}
 .section-wrapper {
   padding: 80px 12px;
 }
@@ -11253,13 +11242,11 @@ img {
 }
 
 @media (max-width: 767px) {
+  .nav {
+    position: static;
+  }
   .section-wrapper {
     padding: 64px 12px;
-  }
-}
-@media (max-width: 767px) {
-  .section-title {
-    font-size: 3rem;
   }
 }
 .selfIntro {
@@ -11283,14 +11270,6 @@ img {
   transform: translateY(-3px);
 }
 
-@media (max-width: 1199px) {
-  .selfIntro {
-    max-width: 100%;
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 40px 24px;
-  }
-}
 .service {
   gap: 32px;
 }
@@ -11321,46 +11300,11 @@ img {
   color: #0027d5;
 }
 
-@media (max-width: 1199px) {
-  .service-list {
-    gap: 32px;
-    width: 100%;
-    padding: 0;
-  }
-  .service-img {
-    width: 100%;
-  }
-  .service-intro {
-    position: static;
-    width: 100%;
-  }
-  .service-foot {
-    margin: 0 12px;
-  }
-}
-@media (max-width: 767px) {
-  .service-foot a {
-    display: block;
-    margin-top: 8px;
-  }
-}
 .carousel-control-btn i {
   color: #0027d5;
   font-size: 44px;
 }
 
-@media (max-width: 1456px) {
-  .carousel-control-btn {
-    display: flex;
-    justify-content: end;
-    gap: 24px;
-    margin-top: 32px;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: static;
-  }
-}
 .case-banner {
   gap: 25px;
 }
@@ -11415,38 +11359,6 @@ img {
   border-bottom: 1px solid #4b4b4b;
 }
 
-@media (max-width: 1199px) {
-  .case-list {
-    gap: 48px;
-  }
-  .case-list-item {
-    flex: 0 0 calc((100% - 48px) / 2);
-  }
-}
-@media (max-width: 767px) {
-  .case-banner {
-    gap: 0;
-  }
-  .case-img-wrapper, .case-intro {
-    max-width: 100%;
-  }
-  .case-intro {
-    position: relative;
-    z-index: 1;
-    margin-top: -160px;
-    display: block;
-  }
-  .case-intro-card {
-    margin: 0;
-    padding: 40px 24px;
-  }
-  .case-intro-card-up {
-    margin-bottom: 12px;
-  }
-  .case-list-item {
-    flex: 0 0 100%;
-  }
-}
 .subscribe-section {
   padding: 172px 80px;
 }
@@ -11461,22 +11373,6 @@ img {
   font-weight: 500;
 }
 
-@media (max-width: 1199px) {
-  .subscribe-section {
-    padding: 86px 40px;
-  }
-  .subscribe-content {
-    padding: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .subscribe-section {
-    padding: 12px;
-  }
-  .subscribe-content {
-    padding: 40px 24px;
-  }
-}
 .contact-list-item:hover {
   padding-left: 16px;
   padding-right: 8px;
@@ -11503,7 +11399,89 @@ img {
   display: block;
 }
 
+@media (max-width: 1456px) {
+  .carousel-control-btn {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+  }
+}
+@media (max-width: 1199px) {
+  .selfIntro {
+    max-width: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 40px 24px;
+  }
+  .service-list {
+    gap: 32px;
+    width: 100%;
+    padding: 0;
+  }
+  .service-img {
+    width: 100%;
+  }
+  .service-intro {
+    position: static;
+    width: 100%;
+  }
+  .service-foot {
+    margin: 0 12px;
+  }
+  .case-list {
+    gap: 48px;
+  }
+  .case-list-item {
+    flex: 0 0 calc((100% - 48px) / 2);
+  }
+  .subscribe-section {
+    padding: 86px 40px;
+  }
+  .subscribe-content {
+    padding: 40px;
+  }
+}
 @media (max-width: 767px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .service-foot a {
+    display: block;
+    margin-top: 8px;
+  }
+  .case-banner {
+    gap: 0;
+  }
+  .case-img-wrapper, .case-intro {
+    max-width: 100%;
+  }
+  .case-intro {
+    position: relative;
+    z-index: 1;
+    margin-top: -160px;
+    display: block;
+  }
+  .case-intro-card {
+    margin: 0;
+    padding: 40px 24px;
+  }
+  .case-intro-card-up {
+    margin-bottom: 12px;
+  }
+  .case-list-item {
+    flex: 0 0 100%;
+  }
+  .subscribe-section {
+    padding: 12px;
+  }
+  .subscribe-content {
+    padding: 40px 24px;
+  }
   .contact-list-item {
     font-size: 1.5rem;
   }
