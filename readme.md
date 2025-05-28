@@ -1,7 +1,7 @@
 # Read
 
 六角學院 2025 體驗營 - 最終任務 - 個人部落格網站設計  
-[成果網頁](https://helebird.github.io/HexFinal_BrandSite/)
+[成果網頁](https://helebird.github.io/hexfinal_brandsite/)
 
 ## 設計稿
 
