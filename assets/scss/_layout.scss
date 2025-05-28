@@ -17,21 +17,6 @@
   }
 }
 
-.navbar {
-  // position: fixed;
-  // z-index: 10;
-  // width: 100%;
-  // padding: 24px 0;
-  // background-color: $gray-100;
-  // &-link {
-  //   color: #000;
-  //   font-weight: bold;
-  //   &:hover {
-  //     color: $primary;
-  //   }
-  // }
-}
-
 @media (max-width: 767px) {
   .nav {
     position: static;
@@ -45,6 +30,11 @@
 
 .wrapper {
   max-width: 1296px;
+  margin: 0 auto;
+}
+
+.post-wrapper {
+  max-width: 636px;
   margin: 0 auto;
 }
 

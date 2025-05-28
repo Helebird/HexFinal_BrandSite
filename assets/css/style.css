@@ -10995,8 +10995,13 @@ a:hover {
   color: #0027d5;
 }
 
-li {
+ul li {
   list-style-type: none;
+}
+
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 img {
@@ -11175,6 +11180,15 @@ img {
   background-color: #0027d5;
 }
 
+.btn-outline-dark {
+  color: #4b4b4b;
+  border: 1px solid #000;
+}
+.btn-outline-dark:hover {
+  background-color: #ededed;
+  border: 1px solid #ededed;
+}
+
 /* 狀態標籤 */
 .status-tag {
   padding: 6px 12px;
@@ -11230,6 +11244,11 @@ img {
 
 .wrapper {
   max-width: 1296px;
+  margin: 0 auto;
+}
+
+.post-wrapper {
+  max-width: 636px;
   margin: 0 auto;
 }
 
@@ -11561,4 +11580,33 @@ svg {
   .blog-card-full {
     margin-bottom: 0px;
   }
+}
+.post-content section ul {
+  margin-left: 24px;
+}
+.post-content section ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.post-subtitle {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.post-blockquote {
+  padding: 24px;
+  background-color: #ededed;
+  border-radius: 24px;
+}
+.post-btn a {
+  display: block;
+  color: #4b4b4b;
+}
+.post-btn a:hover svg {
+  color: #4b4b4b;
+}
+.post-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #4b4b4b;
 }

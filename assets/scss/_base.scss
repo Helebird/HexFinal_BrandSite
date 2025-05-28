@@ -169,8 +169,13 @@ a {
   }
 }
 
-li {
+ul li {
   list-style-type: none;
+}
+
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 img {
