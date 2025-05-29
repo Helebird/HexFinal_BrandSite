@@ -22,3 +22,35 @@ $(function () {
     return false;
   });
 });
+
+// 文章搜尋功能
+$(function () {
+  let isComposing = false;
+
+  $('#searchInput')
+    .on('compositionstart', function () {
+      isComposing = true;
+    })
+    .on('compositionend', function () {
+      isComposing = false;
+      $(this).trigger('input');
+    })
+    .on('input', function () {
+      if (isComposing) return;
+
+      const keyword = $(this).val().toLowerCase().trim();
+      let metchCard = 0;
+
+      $('.blog-card').each(function () {
+        const titleText = $(this).find('.blog-card-title').text().toLowerCase();
+        if (titleText.includes(keyword)) {
+          $(this).removeClass('d-none');
+          metchCard++;
+        } else {
+          $(this).addClass('d-none');
+        }
+      });
+
+      $('#noResult').toggleClass('d-none', metchCard > 0);
+    });
+});

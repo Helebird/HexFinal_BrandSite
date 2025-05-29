@@ -111,7 +111,7 @@
       <section class="section-wrapper">
         <div class="wrapper">
           <!--   Search   -->
-          <form class="search-form">
+          <form class="search-form" role="search">
             <span class="search-form-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,6 +126,7 @@
             </span>
             <input
               type="search"
+              id="searchInput"
               class="search-form-input"
               placeholder="搜尋你感興趣的文章"
             />
@@ -404,6 +405,9 @@
               <a href="#" class="btn btn-outline-gray">閱讀內文</a>
             </li>
           </ul>
+          <p id="noResult" class="d-none my-5 text-center text-secondary">
+            😰 沒有符合的文章標題，請試試其他關鍵字
+          </p>
 
           <!--   Pagination   -->
           <ul
@@ -467,7 +471,11 @@
       >
         <div class="wrapper">
           <div class="d-flex justify-content-between">
-            <p><a href="#">alysewang@hexschool.com</a></p>
+            <p>
+              <a href="mailto:alysewang@hexschool.com"
+                >alysewang@hexschool.com</a
+              >
+            </p>
             <ul class="d-flex gap-4">
               <li class="contact-footer-icon">
                 <a href="#">
