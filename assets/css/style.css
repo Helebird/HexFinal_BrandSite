@@ -32,6 +32,10 @@
   font-size: 6.25vw;
 }
 
+.text-gray {
+  color: #4b4b4b;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11011,19 +11015,18 @@ img {
      object-fit: cover;
 }
 
-.br {
-  display: block;
-  height: 16px;
+svg {
+  vertical-align: top;
 }
 
-/* 背景圖片 */
+/* Background image */
 .bg-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* 橫線裝飾 */
+/* Horizontal line decoration */
 .line-decor {
   width: 40px;
   height: 40px;
@@ -11037,7 +11040,7 @@ img {
   border-radius: 5px;
 }
 
-/* 按鈕 */
+/* Button */
 .custom-btn {
   padding: 8px 16px;
   border-radius: 40px;
@@ -11062,16 +11065,16 @@ img {
   background-color: #0027d5;
 }
 
-.btn-outline-dark {
+.btn-outline-dark-gray {
   color: #4b4b4b;
   border: 1px solid #000;
 }
-.btn-outline-dark:hover {
+.btn-outline-dark-gray:hover {
   background-color: #ededed;
   border: 1px solid #ededed;
 }
 
-/* 狀態標籤 */
+/* Status tag */
 .status-tag {
   padding: 6px 12px;
   border-radius: 40px;
@@ -11082,7 +11085,7 @@ img {
   cursor: default;
 }
 
-/* 回頂部按鈕 */
+/* Scroll to top button */
 .scrollTopBtn {
   display: none;
   position: fixed;
@@ -11099,7 +11102,7 @@ img {
   transform: scale(1.2);
 }
 
-/* 主頁橫幅 */
+/* Hero section banner */
 .banner-section {
   display: flex;
 }
@@ -11110,6 +11113,7 @@ img {
 }
 .banner-section-right {
   flex-grow: 1;
+  min-height: 356px;
   padding: 300px 80px;
   background-image: url("../img/hero_section2.png");
 }
@@ -11117,23 +11121,7 @@ img {
   margin-bottom: 12px;
 }
 
-/* 部落格卡片列表 */
-.blog-card {
-  flex: 0 0 calc((100% - 48px) / 3);
-}
-.blog-card-img {
-  width: 100%;
-}
-.blog-card-hashtag a:hover {
-  text-decoration: underline;
-  color: #0027d5;
-}
-.blog-card-description {
-  color: #4b4b4b;
-  margin-bottom: 16px;
-}
-
-/* 最新文章橫幅 */
+/* Latest post banner */
 .latest-section {
   display: flex;
   gap: 24px;
@@ -11153,13 +11141,13 @@ img {
   max-width: 98px;
 }
 
-/* 聯絡頁尾 */
+/* Contact footer */
 .contact-footer-icon:hover {
   transform: translateY(-3px);
 }
 
 @media (max-width: 1199px) {
-  /* 主頁橫幅RWD */
+  /* Hero section banner RWD */
   .banner-section {
     display: block;
   }
@@ -11167,9 +11155,7 @@ img {
     width: 100%;
   }
   .banner-section-right {
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 24px 34px 200px 24px;
   }
   .banner-section-right-custom {
     min-height: 180px;
@@ -11178,29 +11164,16 @@ img {
   .banner-section-title {
     font-size: 7.5rem;
   }
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
 }
 @media (max-width: 767px) {
-  /* 主頁橫幅RWD */
-  .banner-section-right {
-    min-height: 356px;
-    padding-bottom: 0;
-  }
+  /* Hero section banner RWD */
   .banner-section-right-custom {
-    min-height: 180px;
     padding-bottom: 24px;
   }
   .banner-section-title {
     font-size: 3.25rem;
   }
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
-  }
-  /* 最新文章橫幅RWD */
+  /* Latest post banner RWD */
   .latest-section {
     display: block;
   }
@@ -11218,6 +11191,11 @@ img {
   z-index: 100;
   padding: 24px 0;
   background-color: #fbfbfb;
+}
+.sticky-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .sticky-nav-list-link {
   color: #000;
@@ -11252,14 +11230,10 @@ img {
 .selfIntro {
   position: relative;
   z-index: 1;
-  gap: 16px;
   max-width: 1077px;
   margin-top: -160px;
   margin-right: 80px;
   padding: 80px 40px;
-}
-.selfIntro-group {
-  gap: 4px;
 }
 .selfIntro-group-item {
   width: 44px;
@@ -11270,9 +11244,6 @@ img {
   transform: translateY(-3px);
 }
 
-.service {
-  gap: 32px;
-}
 .service-list {
   gap: 64px;
   margin: 32px auto;
@@ -11282,9 +11253,6 @@ img {
   position: relative;
   width: 100%;
 }
-.service-list-item.flex-row-reverse .service-intro {
-  left: 0;
-}
 .service-intro {
   position: absolute;
   top: 55px;
@@ -11293,8 +11261,8 @@ img {
   width: 480px;
   height: 210px;
 }
-.service-foot-btn {
-  color: #000;
+.service-list-item.flex-row-reverse .service-intro {
+  left: 0;
 }
 .service-foot-btn:hover {
   color: #0027d5;
@@ -11350,24 +11318,14 @@ img {
   padding: 24px;
   background-color: #ededed;
 }
-.case-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
 .case-intro {
   max-width: 526px;
 }
 .case-intro-card {
-  max-width: 100%;
   padding: 80px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
-.case-intro-card a {
+.case-intro-card .custom-btn {
   max-width: 130px;
-  background-color: #fff;
 }
 .case-intro-card-up {
   margin-top: 29px;
@@ -11379,9 +11337,6 @@ img {
   background-color: #f5f5f5;
 }
 .case-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
   margin-top: 40px;
   padding: 24px;
   background-color: #f5f5f5;
@@ -11519,10 +11474,6 @@ img {
     font-size: 1.5rem;
   }
 }
-svg {
-  vertical-align: top;
-}
-
 .search-form {
   display: flex;
   align-items: center;
@@ -11553,19 +11504,28 @@ svg {
   color: #4b4b4b;
 }
 
-.blog-list-full {
+.blog-list {
   padding-top: 40px;
 }
 
-.blog-card-full {
+.blog-card {
   margin-bottom: 40px;
+  flex: 0 0 calc((100% - 48px) / 3);
+}
+.blog-card-hashtag a:hover {
+  text-decoration: underline;
+  color: #0027d5;
 }
 
 .page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 328px;
   margin: 0 auto;
   padding: 8px 20px;
   border-radius: 40px;
+  background-color: #fff;
 }
 .page-list {
   padding: 8px 12px;
@@ -11580,16 +11540,23 @@ svg {
   height: 24px;
 }
 
+@media (max-width: 1199px) {
+  /* Blog Content RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
 @media (max-width: 767px) {
   .search-form {
     max-width: 100%;
   }
-  .blog-list-full {
+  .blog-list {
     gap: 32px;
     padding: 40px 0;
   }
-  .blog-card-full {
+  .blog-card {
     margin-bottom: 0px;
+    flex: 0 0 100%;
   }
 }
 .post-content section ul {

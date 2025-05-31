@@ -1,19 +1,19 @@
-// ============
-// 背景樣式
-// ============
+// =================
+// Background style
+// =================
 
-/* 背景圖片 */
+/* Background image */
 .bg-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-// ============
-// 裝飾性元素
-// ============
+// ====================
+// Decorative elements
+// ====================
 
-/* 橫線裝飾 */
+/* Horizontal line decoration */
 .line-decor {
   width: 40px;
   height: 40px;
@@ -27,11 +27,11 @@
   }
 }
 
-// ============
-// 通用元件
-// ============
+// =====================
+// Common UI components
+// =====================
 
-/* 按鈕 */
+/* Button */
 .custom-btn {
   padding: 8px 16px;
   border-radius: $border-radius;
@@ -56,7 +56,7 @@
   }
 }
 
-.btn-outline-dark {
+.btn-outline-dark-gray {
   color: $gray-500;
   border: 1px solid $black;
   &:hover {
@@ -65,7 +65,7 @@
   }
 }
 
-/* 狀態標籤 */
+/* Status tag */
 .status-tag {
   padding: 6px 12px;
   border-radius: $border-radius;
@@ -76,7 +76,7 @@
   }
 }
 
-/* 回頂部按鈕 */
+/* Scroll to top button */
 .scrollTopBtn {
   display: none;
   position: fixed;
@@ -93,11 +93,11 @@
   }
 }
 
-// ============
-// 區塊視覺樣式
-// ============
+// =====================
+// Section shared style
+// =====================
 
-/* 主頁橫幅 */
+/* Hero section banner */
 .banner-section {
   display: flex;
   &-left {
@@ -107,6 +107,7 @@
   }
   &-right {
     flex-grow: 1;
+    min-height: 356px;
     padding: 300px 80px;
     background-image: url('../img/hero_section2.png');
   }
@@ -115,23 +116,7 @@
   }
 }
 
-/* 部落格卡片列表 */
-.blog-card {
-  flex: 0 0 calc((100% - 24px * 2) / 3);
-  &-img {
-    width: 100%;
-  }
-  &-hashtag a:hover {
-    text-decoration: underline;
-    color: $primary;
-  }
-  &-description {
-    color: $gray-500;
-    margin-bottom: 16px;
-  }
-}
-
-/* 最新文章橫幅 */
+/* Latest post banner */
 .latest-section {
   display: flex;
   gap: 24px;
@@ -151,13 +136,13 @@
   }
 }
 
-/* 聯絡頁尾 */
+/* Contact footer */
 .contact-footer-icon:hover {
   transform: translateY(-3px);
 }
 
 @media (max-width: 1199px) {
-  /* 主頁橫幅RWD */
+  /* Hero section banner RWD */
   .banner-section {
     display: block;
     &-left,
@@ -165,9 +150,7 @@
       width: 100%;
     }
     &-right {
-      padding-top: 24px;
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 24px 34px 200px 24px;
       &-custom {
         min-height: 180px;
         padding-bottom: 48px;
@@ -177,35 +160,20 @@
       font-size: $_font-size-3xl;
     }
   }
-
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 calc((100% - 24px) / 2);
-  }
 }
 
 @media (max-width: 767px) {
-  /* 主頁橫幅RWD */
+  /* Hero section banner RWD */
   .banner-section {
-    &-right {
-      min-height: 356px;
-      padding-bottom: 0;
-      &-custom {
-        min-height: 180px;
-        padding-bottom: 24px;
-      }
+    &-right-custom {
+      padding-bottom: 24px;
     }
     &-title {
       font-size: 3.25rem;
     }
   }
 
-  /* 部落格卡片列表RWD */
-  .blog-card {
-    flex: 0 0 100%;
-  }
-
-  /* 最新文章橫幅RWD */
+  /* Latest post banner RWD */
   .latest-section {
     display: block;
     &-img,

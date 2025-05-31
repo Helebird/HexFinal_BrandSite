@@ -1,4 +1,4 @@
-// 多行文字截斷
+// Multi-text truncate
 @mixin text-truncate-multi($lines: 2) {
   display: -webkit-box;
   -webkit-box-orient: vertical;

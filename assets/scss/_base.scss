@@ -139,12 +139,10 @@ table {
 *:before,
 *:after {
   box-sizing: border-box;
-  // outline: 1px solid red;
 }
 
 body {
   background-color: $gray-100;
-  // background-color: red;
   font-size: $_font-size-md;
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: $font-weight-medium;
@@ -184,7 +182,6 @@ img {
   object-fit: cover;
 }
 
-.br {
-  display: block;
-  height: 16px;
+svg {
+  vertical-align: top;
 }

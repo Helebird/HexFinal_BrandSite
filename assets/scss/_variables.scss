@@ -1,4 +1,4 @@
-// 文字大小
+// Font
 $_font-size-xs: 1rem; // 16px
 $_font-size-sm: 1.5rem; // 24px
 $_font-size-md: 1.75rem; // 28px
@@ -25,5 +25,15 @@ $_font-size: (
   }
 }
 
-// 邊框
+$_text-color: (
+  gray: #4b4b4b,
+);
+
+@each $name, $color in $_text-color {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+// Border
 $border-radius: 40px;

@@ -2,12 +2,12 @@ $(window).on('load', function () {
   $('.preloader').fadeOut(100);
 });
 
-// 網頁title
+// Webpage title
 $(function () {
   document.title = $('h1').text();
 });
 
-// 回頂部按鈕
+// Scroll-to-top btn
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -23,7 +23,7 @@ $(function () {
   });
 });
 
-// 文章搜尋功能
+// Articles search function
 $(function () {
   let isComposing = false;
 

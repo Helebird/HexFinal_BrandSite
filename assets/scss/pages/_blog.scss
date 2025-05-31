@@ -1,8 +1,3 @@
-svg {
-  vertical-align: top;
-}
-
-// 部落格文章列表
 // Search
 .search-form {
   display: flex;
@@ -32,20 +27,29 @@ svg {
 }
 
 // Blog Content
-.blog-list-full {
+.blog-list {
   padding-top: 40px;
 }
 
-.blog-card-full {
+.blog-card {
   margin-bottom: 40px;
+  flex: 0 0 calc((100% - 24px * 2) / 3);
+  &-hashtag a:hover {
+    text-decoration: underline;
+    color: $primary;
+  }
 }
 
 // Pagination
 .page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 328px;
   margin: 0 auto;
   padding: 8px 20px;
   border-radius: 40px;
+  background-color: $white;
   &-list {
     padding: 8px 12px;
     color: $gray-500;
@@ -61,17 +65,26 @@ svg {
   }
 }
 
+@media (max-width: 1199px) {
+  /* Blog Content RWD */
+  .blog-card {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
 @media (max-width: 767px) {
-  // Search
+  // Search RWD
   .search-form {
     max-width: 100%;
   }
-  // Blog Content
-  .blog-list-full {
+
+  // Blog Content RWD
+  .blog-list {
     gap: 32px;
     padding: 40px 0;
   }
-  .blog-card-full {
+  .blog-card {
     margin-bottom: 0px;
+    flex: 0 0 100%;
   }
 }

@@ -1,28 +1,23 @@
-// 主視覺
+// Hero section
 .selfIntro {
   position: relative;
   z-index: 1;
-  gap: 16px;
   max-width: 1077px;
   margin-top: -160px;
   margin-right: 80px;
   padding: 80px 40px;
-  &-group {
-    gap: 4px;
-    &-item {
-      width: 44px;
-      height: 44px;
-      color: $primary;
-      &:hover {
-        transform: translateY(-3px);
-      }
+  &-group-item {
+    width: 44px;
+    height: 44px;
+    color: $primary;
+    &:hover {
+      transform: translateY(-3px);
     }
   }
 }
 
-// 服務
+// Service
 .service {
-  gap: 32px;
   &-list {
     gap: 64px;
     margin: 32px auto;
@@ -30,9 +25,6 @@
     &-item {
       position: relative;
       width: 100%;
-    }
-    &-item.flex-row-reverse .service-intro {
-      left: 0;
     }
   }
   &-intro {
@@ -43,15 +35,15 @@
     width: 480px;
     height: 210px;
   }
-  &-foot-btn {
-    color: #000;
-    &:hover {
-      color: $primary;
-    }
+  &-list-item.flex-row-reverse .service-intro {
+    left: 0;
+  }
+  &-foot-btn:hover {
+    color: $primary;
   }
 }
 
-// 部落格精選
+// Featured blog
 .swiper-wrapper-area {
   max-width: 1432px;
   margin: 0 auto;
@@ -91,7 +83,7 @@
   color: #b2bef2;
 }
 
-// 案例
+// Case
 .case {
   &-banner {
     gap: 25px;
@@ -102,22 +94,12 @@
     padding: 24px;
     background-color: $gray-400;
   }
-  &-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
   &-intro {
     max-width: 526px;
     &-card {
-      max-width: 100%;
       padding: 80px 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      a {
+      .custom-btn {
         max-width: 130px;
-        background-color: $white;
       }
       &-up {
         margin-top: 29px;
@@ -131,9 +113,6 @@
     }
   }
   &-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
     margin-top: 40px;
     padding: 24px;
     background-color: $gray-200;
@@ -148,7 +127,7 @@
   }
 }
 
-// 訂閱
+// Subscribe
 .subscribe {
   &-section {
     padding: 172px 80px;
@@ -165,7 +144,7 @@
   }
 }
 
-// 聯絡
+// Contact
 .contact {
   &-list-item:hover {
     padding-left: 16px;
@@ -195,7 +174,7 @@
 }
 
 @media (max-width: 1456px) {
-  // 部落格精選RWD
+  // Featured blog RWD
   .swiper-button-prev,
   .swiper-button-next {
     position: static;
@@ -206,7 +185,7 @@
 }
 
 @media (max-width: 1199px) {
-  // 主視覺RWD
+  // Hero section RWD
   .selfIntro {
     max-width: 100%;
     margin-left: 12px;
@@ -214,7 +193,7 @@
     padding: 40px 24px;
   }
 
-  // 服務RWD
+  // Service RWD
   .service {
     &-list {
       gap: 32px;
@@ -233,7 +212,7 @@
     }
   }
 
-  // 案例RWD
+  // Case RWD
   .case-list {
     gap: 48px;
     &-item {
@@ -241,7 +220,7 @@
     }
   }
 
-  // 訂閱RWD
+  // Subscribe RWD
   .subscribe {
     &-section {
       padding: 86px 40px;
@@ -253,18 +232,18 @@
 }
 
 @media (max-width: 767px) {
-  // 首頁統一樣式
+  // Homepage shared style
   .section-title {
     font-size: $_font-size-xl;
   }
 
-  // 服務RWD
+  // Service RWD
   .service-foot a {
     display: block;
     margin-top: 8px;
   }
 
-  // 案例RWD
+  // Case RWD
   .case {
     &-banner {
       gap: 0;
@@ -291,7 +270,7 @@
     }
   }
 
-  // 訂閱RWD
+  // Subscribe RWD
   .subscribe {
     &-section {
       padding: 12px;
@@ -301,7 +280,7 @@
     }
   }
 
-  // 聯絡RWD
+  // Contact RWD
   .contact-list-item {
     font-size: $_font-size-sm;
   }

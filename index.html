@@ -50,7 +50,7 @@
 
     <main>
       <nav class="sticky-nav">
-        <ul class="sticky-nav-list d-flex justify-content-center gap-4">
+        <ul class="sticky-nav-list">
           <li class="sticky-nav-list-item">
             <a href="index.html" class="sticky-nav-list-link">首頁</a>
           </li>
@@ -60,7 +60,7 @@
         </ul>
       </nav>
 
-      <!-- 主視覺區 -->
+      <!-- Hero section -->
       <section>
         <div class="banner-section">
           <img
@@ -80,14 +80,15 @@
         </div>
 
         <div class="d-xl-flex justify-content-xl-end">
-          <div class="selfIntro d-flex flex-column bg-white">
+          <div class="selfIntro d-flex flex-column gap-3 bg-white">
+            <p>嗨，我是Alyse 一名深耕前端技術的工程師。</p>
             <p>
-              嗨，我是Alyse 一名深耕前端技術的工程師。
-              <span class="br"></span>
               擅長 React、Vue
               等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
             </p>
-            <ul class="selfIntro-group d-flex align-items-center text-center">
+            <ul
+              class="selfIntro-group d-flex align-items-center gap-1 text-center"
+            >
               <li class="selfIntro-group-item">
                 <a href="#">
                   <i class="fa-brands fa-youtube"></i>
@@ -118,12 +119,10 @@
         </div>
       </section>
 
-      <!-- 專業服務與方案 -->
+      <!-- Service section -->
       <section class="service section-wrapper border-bottom border-secondary">
         <div class="wrapper">
-          <h2 class="section-title service-title font-xxl fw-bold">
-            專業服務與方案
-          </h2>
+          <h2 class="section-title font-xxl fw-bold">專業服務與方案</h2>
           <ul class="service-list d-flex flex-column">
             <li class="service-list-item d-xl-flex d-block">
               <img
@@ -185,7 +184,7 @@
           <div class="d-flex justify-content-end">
             <p class="service-foot fw-bold">
               聯繫我，取得更多資訊！
-              <a href="#" class="service-foot-btn text-end">
+              <a href="#" class="service-foot-btn text-end text-dark">
                 <i class="fa-solid fa-circle-arrow-right"></i>
               </a>
             </p>
@@ -193,7 +192,7 @@
         </div>
       </section>
 
-      <!-- 部落格精選 -->
+      <!-- Featured blog section -->
       <section
         class="featured-blog section-wrapper border-bottom border-secondary"
       >
@@ -201,28 +200,24 @@
           <div class="wrapper">
             <h2 class="section-title font-xxl fw-bold mb-4">部落格精選</h2>
             <div class="swiper">
-              <ul class="swiper-wrapper blog-list">
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo0.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，前端職涯成長"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/10/21</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/10/21</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
                     <a href="#" class="font-sm">前端開發 x 職涯成長</a>
                     <span class="status-tag font-xs fw-bold">最新文章</span>
                   </div>
-                  <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
+                  <h3 class="flex-grow-1 mb-2 fw-bold">
                     自學前端不用怕：從零開始的三大關鍵
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     嗨，我是Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
                     其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
                   </p>
@@ -233,17 +228,13 @@
                     閱讀內文
                   </a>
                 </li>
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo2.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，前端面試策略"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/07/08</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/07/08</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
@@ -254,34 +245,30 @@
                   <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
                     前端面試不再慌：破解常見提問的三大策略
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
                   </p>
                   <a href="#" class="custom-btn btn-outline-gray font-xs">
                     閱讀內文
                   </a>
                 </li>
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo3.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，CSS排版與設計"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/09/03</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/09/03</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
                     <a href="#" class="font-sm">#CSS設計</a>
                     <a href="#" class="font-sm">#視覺體驗</a>
                   </div>
-                  <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
+                  <h3 class="flex-grow-1 mb-2 fw-bold">
                     CSS 魔法大揭密：排版與設計的三大關鍵技巧
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
                     CSS，打造兼具美感與功能性的網頁。
                   </p>
@@ -289,27 +276,23 @@
                     閱讀內文
                   </a>
                 </li>
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo9.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，Git版本控制"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/05/04</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/05/04</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
                     <a href="#" class="font-sm">#Git</a>
                     <a href="#" class="font-sm">#協作流程</a>
                   </div>
-                  <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
+                  <h3 class="flex-grow-1 mb-2 fw-bold">
                     Git 與版本控制：前端協作的必修課
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git
                     不僅能記錄程式碼變動，更能確保每位成員都在正確的分支上完成任務。透過這篇文章，你將了解常見的
                     Git 流程，並學會在前端專案中輕鬆管理與協作。
@@ -318,27 +301,23 @@
                     閱讀內文
                   </a>
                 </li>
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo7.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，網頁SEO"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/05/01</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/05/01</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
                     <a href="#" class="font-sm">#SEO</a>
                     <a href="#" class="font-sm">#網頁曝光</a>
                   </div>
-                  <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
+                  <h3 class="flex-grow-1 mb-2 fw-bold">
                     SEO 與前端最佳實踐：讓搜尋引擎看見你的網站
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到它，那就形同隱形。身為前端工程師，瞭解基本的
                     SEO
                     概念與技術是讓網站脫穎而出的關鍵。這篇文章將分享我在前端實作時，常用的
@@ -348,27 +327,23 @@
                     閱讀內文
                   </a>
                 </li>
-                <li
-                  class="swiper-slide blog-card d-flex flex-column align-items-start"
-                >
+                <li class="swiper-slide d-flex flex-column align-items-start">
                   <img
                     src="assets/img/blog_photo10.png"
-                    class="blog-card-img"
+                    class="w-100"
                     alt="部落格文章封面，前端測試攻略"
                   />
-                  <time class="blog-card-date mt-3 mb-1 font-xs"
-                    >2024/02/07</time
-                  >
+                  <time class="mt-3 mb-1 font-xs">2024/02/07</time>
                   <div
                     class="blog-card-hashtag d-flex flex-wrap align-items-center gap-1 font-sm text-primary"
                   >
                     <a href="#" class="font-sm">#測試框架</a>
                     <a href="#" class="font-sm">#品質保證</a>
                   </div>
-                  <h3 class="blog-card-title flex-grow-1 mb-2 fw-bold">
+                  <h3 class="flex-grow-1 mb-2 fw-bold">
                     掌握前端測試：從單元測試到端對端測試的完整攻略
                   </h3>
-                  <p class="blog-card-description line-clamp-2 font-xs">
+                  <p class="line-clamp-2 font-xs text-gray mb-3">
                     寫程式容易，但要確保程式在多種情境、裝置都能正常運行就沒那麼簡單了。這時「測試」便成了維持程式品質的關鍵環節。從最基礎的單元測試，到模擬使用者行為的端對端測試，每一種測試方式都有它的價值與最佳應用情境。本文將帶你認識不同類型的前端測試工具，以及如何在開發流程中實踐自動化測試，打造更穩定、可預期的專案。
                   </p>
                   <a href="#" class="custom-btn btn-outline-gray font-xs">
@@ -389,10 +364,10 @@
         </div>
       </section>
 
-      <!-- 職涯諮詢成功案例 -->
+      <!-- Case section -->
       <section class="case section-wrapper border-bottom border-secondary">
         <div class="wrapper">
-          <h2 class="section-title case-title font-xxl fw-bold mb-4">
+          <h2 class="section-title font-xxl fw-bold mb-4">
             職涯諮詢<br class="d-md-none" />成功案例
           </h2>
           <div class="case-banner d-md-flex flex-md-row flex-column">
@@ -405,12 +380,14 @@
                 <img
                   src="assets/img/case_photo1.png"
                   alt="職涯諮詢示意畫面"
-                  class="case-img"
+                  class="w-100 h-100 d-block"
                 />
               </picture>
             </div>
             <ul class="case-intro">
-              <li class="case-intro-card case-intro-card-up">
+              <li
+                class="case-intro-card case-intro-card-up d-flex flex-column gap-4 w-100"
+              >
                 <div class="line-decor"></div>
                 <p class="font-xs fw-bold">
                   在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
@@ -419,18 +396,22 @@
                   >。
                 </p>
               </li>
-              <li class="case-intro-card case-intro-card-down">
+              <li
+                class="case-intro-card case-intro-card-down d-flex flex-column gap-4 w-100"
+              >
                 <div class="line-decor"></div>
                 <p class="font-xs fw-bold">
                   期待在下一個新機會中，我能與你一起攜手邁向更高峰！
                 </p>
-                <a href="#" class="custom-btn btn-outline-blue font-xs fw-bold"
+                <a
+                  href="#"
+                  class="custom-btn btn-outline-blue font-xs fw-bold bg-white"
                   >立即預約諮詢</a
                 >
               </li>
             </ul>
           </div>
-          <ul class="case-list">
+          <ul class="case-list d-flex flex-wrap gap-4">
             <li class="case-list-item">
               <img src="assets/img/case_photo2.png" alt="學員個人頭像" />
               <h4 class="font-sm fw-bold mt-3 mb-2">無經驗到前端工程師</h4>
@@ -479,7 +460,7 @@
         </div>
       </section>
 
-      <!-- 訂閱電子報 -->
+      <!-- Subscribe section -->
       <section class="subsribe border-bottom border-secondary">
         <div class="banner-section">
           <img
@@ -510,7 +491,7 @@
         </div>
       </section>
 
-      <!-- 與我聯繫 -->
+      <!-- Contact section -->
       <section class="contact section-wrapper">
         <div class="wrapper">
           <h2 class="section-title font-xxl fw-bold mb-4">與我聯繫</h2>

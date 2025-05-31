@@ -1,4 +1,4 @@
-// 頁首
+// Header
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -7,6 +7,9 @@
   padding: 24px 0;
   background-color: $gray-100;
   &-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
     &-link {
       color: #000;
       font-weight: bold;
@@ -17,7 +20,7 @@
   }
 }
 
-// 頁面結構
+// Page structure
 .section-wrapper {
   padding: 80px 12px;
 }
@@ -33,12 +36,12 @@
 }
 
 @media (max-width: 767px) {
-  // 頁首RWD
+  // Header RWD
   .nav {
     position: static;
   }
 
-  // 頁面結構RWD
+  // Page structure RWD
   .section-wrapper {
     padding: 64px 12px;
   }
