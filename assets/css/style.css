@@ -11265,6 +11265,9 @@ svg {
 .service-list-item.flex-row-reverse .service-intro {
   left: 0;
 }
+.service-foot-btn {
+  color: #000;
+}
 .service-foot-btn:hover {
   color: #0027d5;
 }

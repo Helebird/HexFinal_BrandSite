@@ -38,8 +38,11 @@
   &-list-item.flex-row-reverse .service-intro {
     left: 0;
   }
-  &-foot-btn:hover {
-    color: $primary;
+  &-foot-btn {
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
   }
 }
 
