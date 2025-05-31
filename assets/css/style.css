@@ -11059,6 +11059,7 @@ svg {
 .btn-outline-blue {
   color: #0027d5;
   border: 1px solid #0027d5;
+  background-color: #fff;
 }
 .btn-outline-blue:hover {
   color: #fff;
