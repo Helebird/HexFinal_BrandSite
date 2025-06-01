@@ -16,7 +16,7 @@ $_font-size: (
   xl: 3rem,
   xxl: 4rem,
   3xl: 7.5rem,
-  h2: 6.25vw,
+  h2: calc(((100vw / 2) - 160px) / 6.666),
 );
 
 @each $name, $size in $_font-size {

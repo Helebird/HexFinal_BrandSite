@@ -136,7 +136,7 @@
     padding: 172px 80px;
   }
   &-content {
-    padding: 80px;
+    padding: calc(((100vw / 2) - 160px) / 10);
   }
   &-form input {
     padding: 8px 16px;

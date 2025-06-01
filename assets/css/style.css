@@ -29,7 +29,7 @@
 }
 
 .font-h2 {
-  font-size: 6.25vw;
+  font-size: calc((50vw - 160px) / 6.666);
 }
 
 .text-gray {
@@ -11163,7 +11163,7 @@ svg {
     padding-bottom: 48px;
   }
   .banner-section-title {
-    font-size: 7.5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 767px) {
@@ -11358,7 +11358,7 @@ svg {
   padding: 172px 80px;
 }
 .subscribe-content {
-  padding: 80px;
+  padding: calc((50vw - 160px) / 10);
 }
 .subscribe-form input {
   padding: 8px 16px;
