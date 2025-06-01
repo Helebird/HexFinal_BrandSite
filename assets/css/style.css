@@ -10989,7 +10989,7 @@ h1, .h1 {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #000;
 }
 a:hover {
   color: #0027d5;
@@ -11236,6 +11236,8 @@ svg {
 .selfIntro-group-item {
   width: 44px;
   height: 44px;
+}
+.selfIntro-group-item a {
   color: #0027d5;
 }
 .selfIntro-group-item:hover {
@@ -11261,12 +11263,6 @@ svg {
 }
 .service-list-item.flex-row-reverse .service-intro {
   left: 0;
-}
-.service-foot-btn {
-  color: #000;
-}
-.service-foot-btn:hover {
-  color: #0027d5;
 }
 
 .swiper-wrapper-area {

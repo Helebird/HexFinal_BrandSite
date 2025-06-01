@@ -9,7 +9,9 @@
   &-group-item {
     width: 44px;
     height: 44px;
-    color: $primary;
+    a {
+      color: $primary;
+    }
     &:hover {
       transform: translateY(-3px);
     }
@@ -37,12 +39,6 @@
   }
   &-list-item.flex-row-reverse .service-intro {
     left: 0;
-  }
-  &-foot-btn {
-    color: $black;
-    &:hover {
-      color: $primary;
-    }
   }
 }
 
