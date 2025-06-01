@@ -1,7 +1,3 @@
-$(window).on('load', function () {
-  $('.preloader').fadeOut(100);
-});
-
 // Webpage title
 $(function () {
   document.title = $('h1').text();
