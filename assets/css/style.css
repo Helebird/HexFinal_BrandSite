@@ -28,10 +28,6 @@
   font-size: 7.5rem;
 }
 
-.font-h2 {
-  font-size: calc((50vw - 160px) / 6.666);
-}
-
 .text-gray {
   color: #4b4b4b;
 }
@@ -11120,6 +11116,7 @@ svg {
 }
 .banner-section-title {
   margin-bottom: 12px;
+  font-size: calc((50vw - 160px) / 6.666);
 }
 
 /* Latest post banner */
