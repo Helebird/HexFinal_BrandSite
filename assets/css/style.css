@@ -11012,7 +11012,9 @@ img {
 }
 
 svg {
-  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* Background image */
@@ -11240,6 +11242,11 @@ svg {
 .selfIntro-group-item a {
   color: #0027d5;
 }
+.selfIntro-group-item i {
+  display: block;
+  margin: 10px;
+  font-size: 24px;
+}
 .selfIntro-group-item:hover {
   transform: translateY(-3px);
 }
@@ -11374,17 +11381,9 @@ svg {
   color: #000;
 }
 .contact-link i {
-  width: 44px;
-  height: 44px;
-  padding-left: 10px;
-}
-
-.arrow-container {
-  width: 24px;
-  height: 24px;
-}
-.arrow-container img {
-  display: block;
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
 }
 
 @media (max-width: 1456px) {
@@ -11483,8 +11482,6 @@ svg {
 }
 .search-form-icon {
   color: #4b4b4b;
-  width: 24px;
-  height: 24px;
 }
 .search-form-input {
   width: 318px;
@@ -11531,11 +11528,6 @@ svg {
 .page-list:hover {
   transform: translateY(-1px);
 }
-.page-prev a, .page-next a {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
 
 @media (max-width: 1199px) {
   /* Blog Content RWD */
@@ -11577,11 +11569,6 @@ svg {
   display: block;
   color: #4b4b4b;
 }
-.post-btn a:hover svg {
-  color: #4b4b4b;
-}
 .post-btn svg {
-  width: 24px;
-  height: 24px;
-  color: #4b4b4b;
+  display: inline-block;
 }
