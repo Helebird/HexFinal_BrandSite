@@ -11131,6 +11131,7 @@ svg {
 .latest-section-img {
   display: block;
   width: 50%;
+  max-width: 948px;
   min-height: 375px;
 }
 .latest-section-content {
