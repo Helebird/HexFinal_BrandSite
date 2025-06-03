@@ -14,12 +14,13 @@
     // height: 24px;
   }
   &-input {
-    width: 318px;
+    width: 100%;
     padding: 0;
     border: 0;
     box-shadow: none;
     outline: none;
     font-size: $_font-size-xs;
+    background-color: $gray-100;
     &::placeholder {
       color: $gray-500;
     }

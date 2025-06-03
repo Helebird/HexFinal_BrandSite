@@ -11485,12 +11485,13 @@ svg {
   color: #4b4b4b;
 }
 .search-form-input {
-  width: 318px;
+  width: 100%;
   padding: 0;
   border: 0;
   box-shadow: none;
   outline: none;
   font-size: 1rem;
+  background-color: #fbfbfb;
 }
 .search-form-input::-moz-placeholder {
   color: #4b4b4b;
